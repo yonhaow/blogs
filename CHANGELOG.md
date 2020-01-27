@@ -15,6 +15,7 @@
 * **add golang-02 post.:** 优化 deploy.sh 脚本; 添加 Golang-02 文章; ([8d2d625](https://gitee.com/yonhaow/Blogs/commits/8d2d625cd095408ca9f1a2116b2a8f21f677fd21))
 * **add golang01:** 首次提交; 添加 开发学习文章 Golang01 Post; ([8bb3965](https://gitee.com/yonhaow/Blogs/commits/8bb3965af5e016d41ea7be4e11b8f0d176ab139d))
 * **update deploy.sh file to add new options.:** deploy.sh 完善相关功能 ([805fc43](https://gitee.com/yonhaow/Blogs/commits/805fc431101d2db95fbfbf450455903014ea66cc))
+* **update deploy.sh.:** 优化 deploy.sh 脚本, 区分 打包提交 与 仅提交; ([8423053](https://gitee.com/yonhaow/Blogs/commits/84230539ad8babce627ca462de0ba2584c0af571))
 
 
 

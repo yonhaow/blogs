@@ -4,16 +4,11 @@ module.exports = {
   // 网站描述
   description: "今天不想做，所以才要做。  ------From 春上村树",
   // 打包目录
-  dest: "./dist",
+  dest: "./docs",
   // vuepress主题
   theme: "meteorlxy",
   // vuepress插件
-  plugins: [
-    // "@vuepress/active-header-links",
-    // "@vuepress/back-to-top",
-    "@vuepress/medium-zoom"
-    // "@vuepress/nprogress"
-  ],
+  plugins: ["@vuepress/medium-zoom"],
   // 设置站点根路径，如果你在访问的地址是 'www.xxxx.com/wxDocs' 那么就设置成 '/wxDocs/'
   base: "/blogs/",
   // 添加 github 链接，但是这个要放在公司的内网服务器，所以为空
