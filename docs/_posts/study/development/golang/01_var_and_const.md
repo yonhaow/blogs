@@ -3,7 +3,7 @@ description: Golang 基础 - 变量与常量
 # 设置当前文章的发布时间
 date: 2020-01-26 21:32
 # 设置当前文章的分类
-category: docs
+category: Study
 # 设置当前文章的标签
 tags:
   - Development
@@ -11,7 +11,7 @@ tags:
   - Golang
 ---
 
-# Golang-01 Golang Variable And Constant
+# Golang-01 Variable And Constant
 
 > `Golang` 语言基础 - 变量和常量
 

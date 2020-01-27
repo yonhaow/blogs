@@ -27,7 +27,7 @@
 # branch [name]             创建Git分支
 # checkout [name]           切换Git分支
 # merge [name]              合并分支到主分支
-# push                      提交到远程仓库
+# push [name]               提交到远程仓库
 #############################################################################################################
 
 name=$1 #操作名称
@@ -111,6 +111,6 @@ case $name in
     git status -s
     git add -A
     git cz
-    git push -u origin master && git push -u coding master && showStatus
+    git push -u origin $param1 && git push -u github $param1 && git push -u coding $param1 && showStatus
   ;;
 esac
