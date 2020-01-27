@@ -29,7 +29,7 @@ module.exports = {
       "link",
       {
         rel: "icon",
-        href: "https://sm.ms/image/Z56COdlHqzp8QY2"
+        href: "https://i.loli.net/2020/01/27/Z56COdlHqzp8QY2.jpg"
       }
     ]
   ],
@@ -60,7 +60,7 @@ module.exports = {
       // 设置为外部链接
       // avatar: "https://www.meteorlxy.cn/assets/img/avatar.jpg",
       // 或者放置在 .vuepress/public 文件夹，例如 .vuepress/public/img/avatar.jpg
-      avatar: "https://sm.ms/image/YiACJTeG7EqxHFj",
+      avatar: "https://i.loli.net/2020/01/27/YiACJTeG7EqxHFj.jpg",
 
       // 社交平台帐号信息
       sns: {
@@ -89,7 +89,7 @@ module.exports = {
       // header 的背景，可以使用图片，或者随机变化的图案（geopattern）
       background: {
         // 使用图片的 URL，如果设置了图片 URL，则不会生成随机变化的图案，下面的 useGeo 将失效
-        url: "https://sm.ms/image/4t5hxWLAbPTKakQ",
+        url: "https://i.loli.net/2020/01/27/4t5hxWLAbPTKakQ.png",
         // 使用随机变化的图案，如果设置为 false，且没有设置图片 URL，将显示为空白背景
         useGeo: true
       },
