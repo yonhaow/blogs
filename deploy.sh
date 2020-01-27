@@ -107,6 +107,7 @@ case $name in
   push)
     echo "正在执行提交命令"
     npm run build
+    npm run changelog
     git status -s
     git add -A
     git cz
