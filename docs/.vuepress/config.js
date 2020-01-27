@@ -29,8 +29,7 @@ module.exports = {
       "link",
       {
         rel: "icon",
-        href: "/images/icon.jpg"
-        // "https://blobs.officehome.msocdn.com/images/content/images/favicon-8f211ea639.ico"
+        href: "https://sm.ms/image/Z56COdlHqzp8QY2"
       }
     ]
   ],
@@ -46,7 +45,7 @@ module.exports = {
       nickname: "Yonhaow",
 
       // 个人简介 (支持 HTML)
-      description: "Happy Coding<br/>Happy Life",
+      description: "今天不想做，所以才要做。 --- 春上村树",
 
       // 电子邮箱
       email: "yonhaow@163.com",
@@ -61,7 +60,7 @@ module.exports = {
       // 设置为外部链接
       // avatar: "https://www.meteorlxy.cn/assets/img/avatar.jpg",
       // 或者放置在 .vuepress/public 文件夹，例如 .vuepress/public/img/avatar.jpg
-      avatar: "/images/avatar.jpg",
+      avatar: "https://sm.ms/image/YiACJTeG7EqxHFj",
 
       // 社交平台帐号信息
       sns: {
@@ -90,7 +89,7 @@ module.exports = {
       // header 的背景，可以使用图片，或者随机变化的图案（geopattern）
       background: {
         // 使用图片的 URL，如果设置了图片 URL，则不会生成随机变化的图案，下面的 useGeo 将失效
-        url: "/images/background.jpg",
+        url: "https://sm.ms/image/4t5hxWLAbPTKakQ",
         // 使用随机变化的图案，如果设置为 false，且没有设置图片 URL，将显示为空白背景
         useGeo: true
       },
