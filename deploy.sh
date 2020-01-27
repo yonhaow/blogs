@@ -28,6 +28,7 @@
 # checkout [name]           切换Git分支
 # merge [name]              合并分支到主分支
 # push [name]               提交到远程仓库
+# upload [name]             打包文件并提交修改到远程仓库
 #############################################################################################################
 
 name=$1 #操作名称
@@ -103,8 +104,17 @@ case $name in
     git checkout master
     git merge $param1 && showStatus
   ;;
-  # 提交修改
+  # 提交修改到远程仓库
   push)
+    echo "正在执行提交命令"
+    npm run changelog
+    git status -s
+    git add -A
+    git cz
+    git push -u origin $param1 && git push -u github $param1 && git push -u coding $param1 && showStatus
+  ;;
+  # 打包并提交提交修改
+  upload)
     echo "正在执行提交命令"
     npm run build
     npm run changelog
