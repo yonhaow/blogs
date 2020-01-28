@@ -18,4 +18,6 @@ date: 2020-01-26 21:32
 
 #### Golang
 
-- [01 基础知识-变量与常量](/_posts/study/golang/01VarConst.md)
+- [01 基础知识-变量与常量](/_posts/study/development/golang/01_var_and_const.md)
+- [02 基础知识-基本数据类型](/_posts/study/development/golang/02_data_type.md)
+- [03 基础知识-运算符](/_posts/study/development/golang/03_operators.md)
