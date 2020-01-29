@@ -107,20 +107,20 @@ case $name in
   # 提交修改到远程仓库
   push)
     echo "正在执行提交命令"
-    npm run changelog
+    # npm run changelog
     git status -s
     git add -A
-    git cz
+    npm run commit
     git push -u origin $param1 && git push -u github $param1 && git push -u coding $param1 && showStatus
   ;;
   # 打包并提交提交修改
   upload)
     echo "正在执行提交命令"
     npm run build
-    npm run changelog
+    # npm run changelog
     git status -s
     git add -A
-    git cz
+    npm run commit
     git push -u origin $param1 && git push -u github $param1 && git push -u coding $param1 && showStatus
   ;;
 esac
