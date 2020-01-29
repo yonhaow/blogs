@@ -21,3 +21,11 @@
   - [link](https://sm.ms/image/4t5hxWLAbPTKakQ)
   - [remove url](https://sm.ms/delete/e5F8qZAjNDwPLTiOon6mgaH7l4)
   - ![background.jpg](https://i.loli.net/2020/01/27/4t5hxWLAbPTKakQ.png)
+- slice_01.png
+  - [link](https://sm.ms/image/sPikFQTdvlrypcC)
+  - [remove url](https://sm.ms/delete/EyBWKvxowUYZLhbFeSuV3XzCTQ)
+  - ![slice_01.png](https://i.loli.net/2020/01/29/sPikFQTdvlrypcC.png)
+- slice_02.png
+  - [link](https://sm.ms/image/ifYTBlV8e9EkJDy)
+  - [remove url](https://sm.ms/delete/sCv4JVpYZTmRA5xa61yWX8reSO)
+  - ![slice_02.png](https://i.loli.net/2020/01/29/ifYTBlV8e9EkJDy.png)

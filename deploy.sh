@@ -107,7 +107,7 @@ case $name in
   # 提交修改到远程仓库
   push)
     echo "正在执行提交命令"
-    # npm run changelog
+    npm run changelog
     git status -s
     git add -A
     npm run commit
@@ -117,7 +117,7 @@ case $name in
   upload)
     echo "正在执行提交命令"
     npm run build
-    # npm run changelog
+    npm run changelog
     git status -s
     git add -A
     npm run commit

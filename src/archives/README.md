@@ -23,3 +23,4 @@ date: 2020-01-26 21:32
 - [03 基础知识-运算符](/_posts/study/development/golang/03_operators.md)
 - [04 基础知识-流程控制](/_posts/study/development/golang/04_basic.md)
 - [05 基础知识-数组](/_posts/study/development/golang/05_array.md)
+- [06 基础知识-切片](/_posts/study/development/golang/06_slice.md)

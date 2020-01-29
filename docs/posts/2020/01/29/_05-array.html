@@ -6,7 +6,7 @@
     <title>Golang-05 Array | Yonhaow&#39;s Blog</title>
     <meta name="description" content="Golang 基础 - 数组">
     <link rel="icon" href="https://i.loli.net/2020/01/27/Z56COdlHqzp8QY2.jpg">
-    <link rel="preload" href="/blogs/assets/css/0.styles.8ca4172e.css" as="style"><link rel="preload" href="/blogs/assets/js/app.17783742.js" as="script"><link rel="preload" href="/blogs/assets/js/6.cfb10df9.js" as="script"><link rel="preload" href="/blogs/assets/js/17.7bf8b773.js" as="script"><link rel="prefetch" href="/blogs/assets/js/1.29944244.js"><link rel="prefetch" href="/blogs/assets/js/10.3205ca90.js"><link rel="prefetch" href="/blogs/assets/js/11.f56cff12.js"><link rel="prefetch" href="/blogs/assets/js/12.93af895e.js"><link rel="prefetch" href="/blogs/assets/js/13.1e12fcc0.js"><link rel="prefetch" href="/blogs/assets/js/14.432b93ae.js"><link rel="prefetch" href="/blogs/assets/js/15.68ae8996.js"><link rel="prefetch" href="/blogs/assets/js/16.887030a0.js"><link rel="prefetch" href="/blogs/assets/js/18.d55495da.js"><link rel="prefetch" href="/blogs/assets/js/19.78ae64bc.js"><link rel="prefetch" href="/blogs/assets/js/20.0ef125fb.js"><link rel="prefetch" href="/blogs/assets/js/3.034dba49.js"><link rel="prefetch" href="/blogs/assets/js/4.8764dfc3.js"><link rel="prefetch" href="/blogs/assets/js/5.40358efc.js"><link rel="prefetch" href="/blogs/assets/js/7.aa7b75a9.js"><link rel="prefetch" href="/blogs/assets/js/8.00ac0437.js"><link rel="prefetch" href="/blogs/assets/js/9.819080a4.js">
+    <link rel="preload" href="/blogs/assets/css/0.styles.8ca4172e.css" as="style"><link rel="preload" href="/blogs/assets/js/app.b7457a4c.js" as="script"><link rel="preload" href="/blogs/assets/js/6.cfb10df9.js" as="script"><link rel="preload" href="/blogs/assets/js/17.539711f9.js" as="script"><link rel="prefetch" href="/blogs/assets/js/1.29944244.js"><link rel="prefetch" href="/blogs/assets/js/10.320d83c1.js"><link rel="prefetch" href="/blogs/assets/js/11.28b2c509.js"><link rel="prefetch" href="/blogs/assets/js/12.5d9ac524.js"><link rel="prefetch" href="/blogs/assets/js/13.64c1ed00.js"><link rel="prefetch" href="/blogs/assets/js/14.ec5d167e.js"><link rel="prefetch" href="/blogs/assets/js/15.68ae8996.js"><link rel="prefetch" href="/blogs/assets/js/16.afc77210.js"><link rel="prefetch" href="/blogs/assets/js/18.f9905c78.js"><link rel="prefetch" href="/blogs/assets/js/19.276e4400.js"><link rel="prefetch" href="/blogs/assets/js/20.13667543.js"><link rel="prefetch" href="/blogs/assets/js/21.77b6c348.js"><link rel="prefetch" href="/blogs/assets/js/3.6703f64f.js"><link rel="prefetch" href="/blogs/assets/js/4.8764dfc3.js"><link rel="prefetch" href="/blogs/assets/js/5.d1fc9610.js"><link rel="prefetch" href="/blogs/assets/js/7.7482f352.js"><link rel="prefetch" href="/blogs/assets/js/8.39a6cded.js"><link rel="prefetch" href="/blogs/assets/js/9.819080a4.js">
     <link rel="stylesheet" href="/blogs/assets/css/0.styles.8ca4172e.css">
   </head>
   <body>
@@ -22,8 +22,10 @@
           Golang-05 Array
         </h1></div></div></div></header> <div class="container clearfix show-aside" data-v-6e91a59a data-v-6e91a59a><main class="main" data-v-6e91a59a><div class="post" data-v-6e91a59a data-v-6e91a59a><section class="post-meta main-div" data-v-4e23451f><section class="post-date clearfix" data-v-4e23451f><span class="create-date" data-v-4e23451f>
       Created : 2020-01-29
-    </span> <!----></section> <section class="post-links" data-v-4e23451f><a href="/blogs/posts/2020/01/28/_03-operators.html" class="post-link" data-v-4e23451f>
-      Previous Post : Golang-03 Operators
+    </span> <span class="update-date" data-v-4e23451f>
+      Updated : 2020-01-29
+    </span></section> <section class="post-links" data-v-4e23451f><a href="/blogs/posts/2020/01/29/_06-slice.html" class="post-link" data-v-4e23451f>
+      Previous Post : Golang-06 Slice
     </a> <!----></section></section> <article class="main-div"><div class="post-content content content__default"><h1 id="golang-05-array"><a href="#golang-05-array" class="header-anchor">#</a> Golang-05 Array</h1> <blockquote><p><code>Golang</code> 语言基础 - 数组</p></blockquote> <p></p><div class="table-of-contents"><ul><li><a href="#数组的概念">数组的概念</a></li><li><a href="#数组的定义">数组的定义</a></li><li><a href="#数组的初始化">数组的初始化</a></li><li><a href="#数组的遍历">数组的遍历</a></li><li><a href="#多维数组">多维数组</a><ul><li><a href="#二维数组的定义">二维数组的定义</a></li><li><a href="#二维数组的遍历">二维数组的遍历</a></li></ul></li><li><a href="#关于值类型">关于值类型</a></li><li><a href="#exercise">Exercise</a></li></ul></div><p></p> <h2 id="数组的概念"><a href="#数组的概念" class="header-anchor">#</a> 数组的概念</h2> <p>数组是同一种数据类型元素的集合。</p> <p>在 <code>Golang</code> 中，数组从声明时就确定，使用时可以修改数组成员，但是数组大小(长度)不可变化。数组是<strong>值类型</strong>。</p> <p>数组是值类型，赋值和传参会复制整个数组。因此改变副本的值，不会改变本身的值。</p> <p><code>[n]*T</code> 表示指针数组，<code>*[n]T</code> 表示数组指针 。</p> <h2 id="数组的定义"><a href="#数组的定义" class="header-anchor">#</a> 数组的定义</h2> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">var</span> 数组变量名 <span class="token punctuation">[</span>元素数量即数组长度<span class="token punctuation">]</span>T
 </code></pre></div><div class="language-go extra-class"><pre class="language-go"><code><span class="token comment">// 定义一个长度为3元素类型为int的数组a</span>
 <span class="token keyword">var</span> a <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token builtin">int</span>
@@ -124,8 +126,10 @@ b <span class="token operator">:=</span> <span class="token punctuation">[</span
 <span class="token punctuation">}</span>
 </code></pre></div><h2 id="exercise"><a href="#exercise" class="header-anchor">#</a> Exercise</h2> <ol><li>求数组 <code>[1, 3, 5, 7, 8]</code> 所有元素的和</li> <li>找出数组中和为指定值的两个元素的下标，比如从数组 <code>[1, 3, 5, 7, 8]</code> 中找出和为 8 的两个元素的下标分别为 <code>(0,3)</code> 和 <code>(1,2)</code>。</li></ol></div></article> <section class="post-meta main-div" data-v-4e23451f><section class="post-date clearfix" data-v-4e23451f><span class="create-date" data-v-4e23451f>
       Created : 2020-01-29
-    </span> <!----></section> <section class="post-links" data-v-4e23451f><a href="/blogs/posts/2020/01/28/_03-operators.html" class="post-link" data-v-4e23451f>
-      Previous Post : Golang-03 Operators
+    </span> <span class="update-date" data-v-4e23451f>
+      Updated : 2020-01-29
+    </span></section> <section class="post-links" data-v-4e23451f><a href="/blogs/posts/2020/01/29/_06-slice.html" class="post-link" data-v-4e23451f>
+      Previous Post : Golang-06 Slice
     </a> <!----></section></section> <!----></div></main> <aside class="aside" data-v-6e91a59a><div class="info-card main-div" data-v-23d90c50 data-v-6e91a59a><div class="info-card-header" data-v-23d90c50><img src="https://i.loli.net/2020/01/27/YiACJTeG7EqxHFj.jpg" alt="Yonhaow" class="info-avatar" data-v-23d90c50></div> <div class="info-card-body" data-v-23d90c50><section class="info-nickname" data-v-23d90c50>
       Yonhaow
     </section> <section class="info-desc" data-v-23d90c50>今天不想做，所以才要做。 --- 春上村树</section> <section class="info-contact" data-v-23d90c50><section data-v-23d90c50><span title="Xintai City, HeBei, China" data-v-23d90c50 data-v-23d90c50><svg class="icon" style="font-size:1em;" data-v-23d90c50 data-v-23d90c50><title data-v-23d90c50 data-v-23d90c50>Xintai City, HeBei, China</title><use xlink:href="#icon-location" data-v-23d90c50 data-v-23d90c50></use></svg><span class="info-text" data-v-23d90c50 data-v-23d90c50>
@@ -139,6 +143,6 @@ b <span class="token operator">:=</span> <span class="token punctuation">[</span
     </a> <span data-v-f018ab8c> | </span> <a href="https://github.com/meteorlxy/vuepress-theme-meteorlxy" target="_blank" data-v-f018ab8c>
         meteorlxy
       </a></p> <p class="footer-text" data-v-f018ab8c>Copyright 2020-present <a href="https://github.com/yonhaow" target="_blank">Yonhaow</a> | MIT License</p></footer></div><div class="global-ui"><!----><!----></div></div>
-    <script src="/blogs/assets/js/app.17783742.js" defer></script><script src="/blogs/assets/js/6.cfb10df9.js" defer></script><script src="/blogs/assets/js/17.7bf8b773.js" defer></script>
+    <script src="/blogs/assets/js/app.b7457a4c.js" defer></script><script src="/blogs/assets/js/6.cfb10df9.js" defer></script><script src="/blogs/assets/js/17.539711f9.js" defer></script>
   </body>
 </html>
